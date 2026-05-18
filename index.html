@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- index.html — Homepage for Crumbs & Co. baking website -->
+<html lang="en">
+<head>
+  <!-- Viewport meta tag for responsive/accessible design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Crumbs &amp; Co. &mdash; Artisan baking recipes, tips, and tutorials for home bakers." />
+  <title>Crumbs &amp; Co. &mdash; Home</title>
+
+  <!-- External CSS only — no embedded or inline styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== SITE HEADER & NAVIGATION BAR ===== -->
+  <!-- Working navigation bar linking to all pages -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <!-- Internal link to homepage (logo) -->
+      <a href="index.html" class="nav__logo">Crumbs &amp; Co.</a>
+
+      <ul class="nav__links" role="list">
+        <!-- Internal links to all subpages -->
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="tips.html">Baking Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== ANNOUNCEMENT BANNER ===== -->
+  <!-- Uses special character reference &mdash; -->
+  <div class="callout-banner" role="banner">
+    &#127859; New Recipe: Brown Butter Tahini Cookies &mdash;
+    <a href="recipes.html">See All Recipes &rarr;</a>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" aria-label="Welcome">
+    <div class="hero__inner">
+      <!-- Special character: &amp; used in tagline -->
+      <p class="hero__eyebrow">Baked with love &amp; butter</p>
+      <h1>Where Every<br />Crumb Counts</h1>
+      <p class="hero__sub">
+        Recipes, techniques, and stories from our kitchen to yours.
+        From crusty sourdough to cloud-soft chiffon &mdash; we bake it all.
+      </p>
+      <!-- Internal link button -->
+      <a href="recipes.html" class="btn">Browse Recipes</a>
+      &nbsp;&nbsp;
+      <!-- Internal link button -->
+      <a href="about.html" class="btn btn--outline" style="">Our Story</a>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <!-- Featured Recipes Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__label">Fresh from the Oven</span>
+          <h2>Featured Recipes</h2>
+          <p>Hand-picked bakes to inspire your weekend kitchen adventures.</p>
+        </div>
+
+        <!-- Card grid — content blocks positioned using CSS grid -->
+        <div class="card-grid">
+
+          <!-- Recipe Card 1 — uses Unsplash image -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img
+                class="card__img"
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80"
+                alt="Golden sourdough loaf on a wooden board"
+              />
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Bread</span>
+              <h3 class="card__title">Classic Sourdough</h3>
+              <p class="card__desc">
+                A tangy, open-crumb sourdough with a crackling crust.
+                Requires patience &mdash; but worth every hour.
+              </p>
+              <div class="card__meta">
+                <!-- Special character: &frac12; for ½ -->
+                <span>&#9201; 2&frac12; hrs</span>
+                <span>&#128293; Medium</span>
+                <!-- Internal link to Recipes page -->
+                <a href="recipes.html">View Recipe &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Recipe Card 2 -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img
+                class="card__img"
+                src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80"
+                alt="Stack of chocolate chip cookies with melting chocolate"
+              />
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Cookies</span>
+              <h3 class="card__title">Brown Butter Choc Chip</h3>
+              <p class="card__desc">
+                Nutty brown butter &amp; pools of dark chocolate make these
+                the best cookies you&rsquo;ll ever bake.
+              </p>
+              <div class="card__meta">
+                <span>&#9201; 45 min</span>
+                <span>&#128293; Easy</span>
+                <a href="recipes.html">View Recipe &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Recipe Card 3 -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img
+                class="card__img"
+                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80"
+                alt="Slice of layered lemon cake with cream frosting"
+              />
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Cakes</span>
+              <h3 class="card__title">Lemon Chiffon Layer Cake</h3>
+              <p class="card__desc">
+                Feather-light sponge soaked in lemon syrup, layered with
+                mascarpone cream &amp; candied zest.
+              </p>
+              <div class="card__meta">
+                <!-- Special character: &frac34; for ¾ -->
+                <span>&#9201; 1&frac34; hrs</span>
+                <span>&#128293; Advanced</span>
+                <a href="recipes.html">View Recipe &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.card-grid -->
+      </div>
+    </section>
+
+    
+            <!-- Internal link -->
+            <a href="tips.html" class="btn">Read Baking Tips</a>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1556909211-36987daf7b4d?w=700&q=80"
+              alt="Baker dusting flour on dough on a marble countertop"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  <!-- ===== SITE FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <!-- Brand blurb -->
+      <div class="footer-brand">
+        <span class="footer-brand__logo">Crumbs &amp; Co.</span>
+        <p>Artisan baking recipes &amp; tutorials for passionate home bakers.
+           Made with flour, butter, and a whole lot of love.</p>
+      </div>
+      <!-- Internal navigation links in footer -->
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="tips.html">Baking Tips</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- External resource links -->
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li>
+            <a href="https://www.kingarthurbaking.com" target="_blank" rel="noopener noreferrer">
+              King Arthur Baking
+            </a>
+          </li>
+          <li>
+            <a href="https://www.seriouseats.com/baking" target="_blank" rel="noopener noreferrer">
+              Serious Eats
+            </a>
+          </li>
+          <li>
+            <a href="https://www.theperfectloaf.com" target="_blank" rel="noopener noreferrer">
+              The Perfect Loaf
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <!-- Special characters: &copy; and &mdash; -->
+      <span>&copy; 2025 Crumbs &amp; Co. &mdash; All rights reserved.</span>
+      <span>Baked in Boston, MA &#127468;&#127463;</span>
+    </div>
+  </footer>
+
+</body>
+</html>

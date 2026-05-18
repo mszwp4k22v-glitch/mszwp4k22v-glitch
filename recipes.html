@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- recipes.html — Recipes listing page for Crumbs & Co. -->
+<html lang="en">
+<head>
+  <!-- Viewport for accessibility and responsive design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse all baking recipes at Crumbs &amp; Co. &mdash; breads, cakes, cookies, and pastries." />
+  <title>Recipes &mdash; Crumbs &amp; Co.</title>
+
+  <!-- External CSS only — no embedded or inline CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!--SITE HEADER & NAVIGATION-->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">Crumbs &amp; Co.</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <!-- Active page indicator -->
+        <li><a href="recipes.html" class="active" aria-current="page">Recipes</a></li>
+        <li><a href="tips.html">Baking Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="recipe-hero">
+    <div class="container">
+      <h1>All Recipes</h1>
+      <p>
+        From &frac14; teaspoon of vanilla to multi-day sourdough projects &mdash;
+        every recipe tested until perfect.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <!--BREADS-->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__label">Category</span>
+          <h2>&#127759; Breads &amp; Loaves</h2>
+        </div>
+
+        <!-- Card grid — content blocks positioned with CSS -->
+        <div class="card-grid">
+
+          <!-- Recipe: Sourdough -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img
+                class="card__img"
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80"
+                alt="Scored sourdough loaf on parchment paper"
+              />
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Bread</span>
+              <h3 class="card__title">Classic Sourdough Boule</h3>
+              <p class="card__desc">
+                Open crumb, crackling crust. Baked in a Dutch oven at 500&deg;F
+                for maximum oven spring.
+              </p>
+              <div class="card__meta">
+                <!-- Special characters: &frac12; ½ and degree ° -->
+                <span>&#9201; 2&frac12; hrs + overnight</span>
+                <span>&#128293; Hard</span>
+              </div>
+              <hr class="divider" />
+              <!-- Internal anchor link to recipe detail below -->
+              <a href="#sourdough-detail" class="btn" style="margin-top:0.5rem;">See Recipe</a>
+            </div>
+          </article>
+
+          <!-- Recipe: Focaccia -->
+          <article class="card">
+            <div class="card__img-wrap">
+              <img
+                class="card__img"
+                src="https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=600&q=80"
+                alt="Dimpled focaccia bread with rosemary and sea salt"
+              />
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Bread</span>
+              <h3 class="card__title">Rosemary Focaccia</h3>
+              <p class="card__desc">
+                Pool-of-olive-oil focaccia studded with rosemary &amp; flaky
+                sea salt. Dangerously easy.
+              </p>
+              <div class="card__meta">
+                <span>&#9201; 3 hrs</span>
+                <span>&#128293; Easy</span>
+              </div>
+              <hr class="divider" />
+              <a href="#focaccia-detail" class="btn" style="margin-top:0.5rem;">See Recipe</a>
+            </div>
+          </article>
+
+        </div><!-- /.card-grid -->
+      </div>
+    </section>
+
+    <!-- ---- SOURDOUGH DETAIL ---- -->
+    <!-- Internal anchor target -->
+    <section class="section section--alt" id="sourdough-detail">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__label">Full Recipe</span>
+          <h2>Classic Sourdough Boule</h2>
+        </div>
+
+        <!-- Recipe two-column layout: ingredients sidebar + steps main -->
+        <div class="recipe-layout">
+
+          <!-- Ingredients sidebar (positioned with CSS grid) -->
+          <aside class="ingredients-box" aria-label="Ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <!-- Special characters: measurements with character references -->
+              <li><span class="measure">450g</span> bread flour</li>
+              <li><span class="measure">325g</span> water (80&deg;F)</li>
+              <li><span class="measure">90g</span> active starter</li>
+              <li><span class="measure">9g</span> fine sea salt</li>
+              <li>Rice flour for dusting</li>
+            </ul>
+            <hr class="divider" />
+            <p style="font-size:0.85rem; color:var(--muted);">
+              Yield: 1 loaf &mdash; serves 8&ndash;10
+            </p>
+          </aside>
+
+          <!-- Steps (main column) -->
+          <div class="recipe-steps">
+            <div class="pullquote">
+              &ldquo;Bread baking is meditation &mdash; it forces you to slow down,
+              listen, and trust the dough.&rdquo;
+            </div>
+
+            <ol class="steps-list">
+              <li class="step">
+                <p>
+                  <strong>Autolyse.</strong> Mix flour and water until no dry flour remains.
+                  Cover and rest for 30&ndash;60 minutes. This hydrates the flour and
+                  jump-starts gluten development.
+                </p>
+              </li>
+              <li class="step">
+                <p>
+                  <strong>Add starter &amp; salt.</strong> Sprinkle salt over the dough,
+                  add your starter, and squeeze through your fingers until fully
+                  incorporated. The dough will feel shaggy at first.
+                </p>
+              </li>
+              <li class="step">
+                <p>
+                  <strong>Bulk fermentation.</strong> Over the next 4&ndash;6 hours,
+                  perform 4 sets of stretch &amp; folds every 30 minutes. The dough
+                  should grow by 50&ndash;75%.
+                </p>
+              </li>
+              <li class="step">
+                <p>
+                  <strong>Shape.</strong> Turn onto a lightly floured surface, pre-shape
+                  into a round, rest 20 minutes, then give a final tight shape.
+                </p>
+              </li>
+              <li class="step">
+                <p>
+                  <strong>Cold proof.</strong> Place seam-side up in a floured banneton.
+                  Refrigerate overnight (8&ndash;16 hours).
+                </p>
+              </li>
+              <li class="step">
+                <p>
+                  <strong>Bake.</strong> Preheat Dutch oven to 500&deg;F (260&deg;C).
+                  Score dough, bake covered 20 min, then uncovered 20&ndash;25 min
+                  until deep mahogany. Internal temp: 208&ndash;210&deg;F.
+                </p>
+              </li>
+            </ol>
+
+            <!-- External link to a trusted sourdough resource -->
+            <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--muted);">
+              Want to go deeper? Visit
+              <a href="https://www.theperfectloaf.com" target="_blank" rel="noopener noreferrer">
+                The Perfect Loaf
+              </a>
+              for advanced sourdough guides.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- FOCACCIA DETAIL ---- -->
+    <section class="section" id="focaccia-detail">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__label">Full Recipe</span>
+          <h2>Rosemary Focaccia</h2>
+        </div>
+
+        <div class="recipe-layout">
+          <aside class="ingredients-box" aria-label="Ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li><span class="measure">500g</span> all-purpose flour</li>
+              <li><span class="measure">375g</span> warm water</li>
+              <li><span class="measure">7g</span> instant yeast (1 packet)</li>
+              <li><span class="measure">2 tsp</span> fine salt</li>
+              <!-- Special char: &frac14; for ¼ -->
+              <li><span class="measure">&frac14; cup</span> extra-virgin olive oil</li>
+              <li>Fresh rosemary sprigs</li>
+              <li>Flaky sea salt</li>
+            </ul>
+            <hr class="divider" />
+            <p style="font-size:0.85rem; color:var(--muted);">
+              Bake at 450&deg;F &mdash; serves 12
+            </p>
+          </aside>
+
+          <div class="recipe-steps">
+            <ol class="steps-list">
+              <li class="step">
+                <p><strong>Mix dough.</strong> Combine flour, water, yeast, and salt.
+                Mix until a shaggy dough forms. Drizzle with half the olive oil.</p>
+              </li>
+              <li class="step">
+                <p><strong>First rise.</strong> Cover and let rise at room temperature
+                for 1&ndash;2 hours until doubled, or refrigerate overnight for
+                better flavour.</p>
+              </li>
+              <li class="step">
+                <p><strong>Pan &amp; dimple.</strong> Pour remaining oil into a
+                9&times;13&Prime; pan. Transfer dough, stretch to fit, and dimple
+                aggressively with your fingers.</p>
+              </li>
+              <li class="step">
+                <p><strong>Top &amp; bake.</strong> Press rosemary sprigs in, scatter
+                flaky salt, drizzle more oil. Bake at 450&deg;F for 20&ndash;25 min
+                until golden.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+   
+  </main>
+
+  <!--footer-->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-brand__logo">Crumbs &amp; Co.</span>
+        <p>Artisan baking recipes &amp; tutorials for passionate home bakers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="tips.html">Baking Tips</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://www.kingarthurbaking.com" target="_blank" rel="noopener noreferrer">King Arthur Baking</a></li>
+          <li><a href="https://www.seriouseats.com/baking" target="_blank" rel="noopener noreferrer">Serious Eats</a></li>
+          <li><a href="https://www.theperfectloaf.com" target="_blank" rel="noopener noreferrer">The Perfect Loaf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Crumbs &amp; Co. &mdash; All rights reserved.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

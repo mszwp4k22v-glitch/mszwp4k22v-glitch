@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- tips.html — Baking Tips page for Crumbs & Co. -->
+<html lang="en">
+<head>
+  <!-- Viewport meta for responsive/accessible design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Expert baking tips, techniques, and tricks to make every bake a success." />
+  <title>Baking Tips &mdash; Crumbs &amp; Co.</title>
+
+  <!-- External CSS only — no embedded or inline styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== SITE HEADER & NAVIGATION ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">Crumbs &amp; Co.</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <!-- Active page -->
+        <li><a href="tips.html" class="active" aria-current="page">Baking Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="recipe-hero">
+    <div class="container">
+      <h1>Baking Tips &amp; Techniques</h1>
+      <p>
+        The difference between a good bake &amp; a great one is knowing the
+        <em>why</em>. These tips will make you a more intuitive, confident baker.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <!-- Fundamentals Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__label">Start Here</span>
+          <h2>Baking Fundamentals</h2>
+          <p>Master these basics and every recipe gets easier.</p>
+        </div>
+
+        <!-- Tips grid — content blocks positioned using CSS -->
+        <div class="tips-grid">
+
+          <div class="tip-card">
+            <span class="tip-card__icon">&#9878;</span>
+            <h3>Measure by Weight</h3>
+            <p>
+              <span class="measure">1 cup</span> of flour can weigh anywhere from
+              <span class="measure">120g</span> to <span class="measure">160g</span>
+              depending on how you scoop. A kitchen scale eliminates all variation.
+              Most professional recipes are written in grams.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <span class="tip-card__icon">&#127777;</span>
+            <h3>Oven Temperature Matters</h3>
+            <p>
+              Most home ovens are off by 25&ndash;50&deg;F. A $10 oven thermometer
+              is the most valuable tool you can own. Always preheat fully &mdash;
+              at least 20&ndash;30 minutes before baking.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <span class="tip-card__icon">&#9989;</span>
+            <h3>Read the Whole Recipe First</h3>
+            <p>
+              Before you start, read start-to-finish. Many bakes require
+              room-temperature butter (which takes ~1 hour), overnight rests,
+              or equipment you might not have.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <span class="tip-card__icon">&#128246;</span>
+            <h3>Don&rsquo;t Open the Oven</h3>
+            <p>
+              Every time you open the oven, you drop the temperature by
+              25&ndash;50&deg;F. Cakes can collapse, souffl&eacute;s will fall.
+              Use the oven light and wait.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <span class="tip-card__icon">&#10052;</span>
+            <h3>Cold Fat = Flaky Pastry</h3>
+            <p>
+              For pie dough, croissants, and scones, keep your butter ice cold.
+              The steam from cold butter pockets creates those
+              characteristic flaky layers. Chill your bowl too.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <span class="tip-card__icon">&#129380;</span>
+            <h3>Understand Gluten</h3>
+            <p>
+              Gluten forms when flour &amp; water are mixed and worked.
+              More gluten = chewier bread. Less gluten = tender cake.
+              Over-mixing muffin batter makes them tough &mdash; stop when
+              just combined.
+            </p>
+          </div>
+
+        </div><!-- /.tips-grid -->
+      </div>
+    </section>
+
+    <!-- Ingredient Deep-Dives — two-column layout -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__label">Ingredient Science</span>
+          <h2>Know Your Ingredients</h2>
+        </div>
+
+        <!-- Two-col layout — content positioned using CSS grid -->
+        <div class="two-col" style="margin-bottom:3rem;">
+          <div>
+            <h3>&#129380; Flour Types Explained</h3>
+            <p>
+              <strong>All-purpose flour</strong> (10&ndash;12% protein) is your
+              workhorse: cakes, cookies, quick breads.
+            </p>
+            <p>
+              <strong>Bread flour</strong> (12&ndash;14% protein) has more gluten.
+              Use it for chewy breads and pizza.
+            </p>
+            <p>
+              <strong>Cake flour</strong> (7&ndash;9% protein) is finely milled.
+              Use when you want a delicate, tender crumb.
+            </p>
+            <p>
+              <strong>Whole wheat</strong> adds flavour and nutrition but
+              absorbs more liquid &mdash; substitute max 50% for best results.
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1556909211-36987daf7b4d?w=700&q=80"
+              alt="Variety of flours in small bowls on a wooden surface"
+            />
+          </div>
+        </div>
+
+
+
+        <!-- Internal link to recipes -->
+        <div style="text-align:center; margin-top:2.5rem;">
+          <p style="color:var(--muted); margin-bottom:1rem;">
+            Ready to put these tips into practice?
+          </p>
+          <a href="recipes.html" class="btn">Browse All Recipes</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-brand__logo">Crumbs &amp; Co.</span>
+        <p>Artisan baking recipes &amp; tutorials for passionate home bakers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="tips.html">Baking Tips</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://www.kingarthurbaking.com" target="_blank" rel="noopener noreferrer">King Arthur Baking</a></li>
+          <li><a href="https://www.seriouseats.com/baking" target="_blank" rel="noopener noreferrer">Serious Eats</a></li>
+          <li><a href="https://www.theperfectloaf.com" target="_blank" rel="noopener noreferrer">The Perfect Loaf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Crumbs &amp; Co. &mdash; All rights reserved.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

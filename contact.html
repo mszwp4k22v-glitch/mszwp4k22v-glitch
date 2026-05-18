@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Viewport meta for responsive/accessible design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with the team at Crumbs &amp; Co. &mdash; questions, recipe requests, and feedback welcome." />
+  <title>Contact &mdash; Crumbs &amp; Co.</title>
+
+  <!-- External CSS only — no embedded or inline styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== SITE HEADER & NAVIGATION ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">Crumbs &amp; Co.</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="tips.html">Baking Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <!-- Active page -->
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="recipe-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <!-- Special character: &mdash; for em dash -->
+      <p>
+        Questions about a recipe? A baking disaster to diagnose?
+        A tip to share? We&rsquo;d love to hear from you &mdash;
+        drop us a line below.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <section class="section">
+      <div class="container">
+
+        <!-- Two-column contact layout — content blocks positioned using CSS grid -->
+        <div class="contact-layout">
+
+          <!-- Left column: contact information -->
+          <aside class="contact-info">
+            <h2>Say Hello</h2>
+            <p>
+              We read every message and aim to reply within
+              1&ndash;2 business days. Whether you&rsquo;re a complete
+              beginner or a seasoned baker, there&rsquo;s no question
+              too basic or too advanced.
+            </p>
+
+            <div class="contact-detail">
+              <span class="contact-detail__icon">&#128140;</span>
+              <div class="contact-detail__text">
+                <!-- Special character: &amp; in email context -->
+                <strong>General Inquiries</strong>
+                <span>hello@crumbsandco.com</span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail__icon">&#128247;</span>
+              <div class="contact-detail__text">
+                <strong>Recipe Submissions</strong>
+                <span>recipes@crumbsandco.com</span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail__icon">&#128205;</span>
+              <div class="contact-detail__text">
+                <strong>Based in</strong>
+                <span>Boston, MA &mdash; USA &#127482;&#127480;</span>
+              </div>
+            </div>
+
+            <hr class="divider" />
+
+            
+
+          </aside>
+
+          <!-- Right column: contact form -->
+          <div class="contact-form-wrap">
+            <h2 style="margin-bottom:1.5rem; font-style:italic;">Send a Message</h2>
+
+            <form action="#" method="POST" novalidate>
+
+              <!-- Name field -->
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="e.g. Jamie Oliver&rsquo;s biggest fan"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <!-- Email field -->
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <!-- Topic dropdown -->
+              <div class="form-group">
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                  <option value="">Select a topic&hellip;</option>
+                  <option value="recipe-question">Recipe Question</option>
+                  <option value="baking-help">Baking Help &amp; Troubleshooting</option>
+                  <option value="recipe-submission">Submit My Own Recipe</option>
+                  <option value="feedback">General Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Message field -->
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us what&rsquo;s on your mind &mdash; a baking disaster, a question, or just to say hi!"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Newsletter opt-in -->
+              <div class="form-group" style="display:flex; align-items:center; gap:0.8rem;">
+                <input
+                  type="checkbox"
+                  id="newsletter"
+                  name="newsletter"
+                  style="width:auto; accent-color:var(--caramel);"
+                />
+                <label for="newsletter" style="text-transform:none; font-weight:400; font-size:0.95rem; letter-spacing:0;">
+                  Subscribe to our monthly newsletter &mdash; recipes &amp; tips.
+                </label>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn" style="width:100%; margin-top:0.5rem;">
+                Send Message &#10003;
+              </button>
+
+            </form>
+          </div>
+
+        </div><!-- /.contact-layout -->
+      </div>
+    </section>
+
+
+
+        
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-brand__logo">Crumbs &amp; Co.</span>
+        <p>Artisan baking recipes &amp; tutorials for passionate home bakers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="tips.html">Baking Tips</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://www.kingarthurbaking.com" target="_blank" rel="noopener noreferrer">King Arthur Baking</a></li>
+          <li><a href="https://www.seriouseats.com/baking" target="_blank" rel="noopener noreferrer">Serious Eats</a></li>
+          <li><a href="https://www.theperfectloaf.com" target="_blank" rel="noopener noreferrer">The Perfect Loaf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <!-- Special characters: &copy; and &mdash; -->
+      <span>&copy; 2025 Crumbs &amp; Co. &mdash; All rights reserved.</span>
+      <span>&#127855; Made with butter</span>
+    </div>
+  </footer>
+
+</body>
+</html>

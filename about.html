@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- about.html — About page for Crumbs & Co. -->
+<html lang="en">
+<head>
+  <!-- Viewport for responsive/accessible design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about the bakers behind Crumbs &amp; Co. &mdash; our story, philosophy, and love of baking." />
+  <title>About &mdash; Crumbs &amp; Co.</title>
+
+  <!-- External CSS only — no embedded or inline styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== SITE HEADER & NAVIGATION ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">Crumbs &amp; Co.</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="tips.html">Baking Tips</a></li>
+        <!-- Active page -->
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== ABOUT HERO ===== -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>Baked with Heart</h1>
+      <p>
+        Crumbs &amp; Co. is a small-batch baking blog born in a home kitchen
+        and fueled by curiosity, flour clouds, and too many sticks of butter.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <!-- Our Story — two-column layout -->
+    <section class="section">
+      <div class="container">
+        <!-- Two-column: image + text, positioned using CSS grid -->
+        <div class="two-col">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1556909211-36987daf7b4d?w=700&q=80"
+              alt="Baker shaping dough on a floured wooden board"
+            />
+          </div>
+          <div>
+            <span class="section-header__label">Our Story</span>
+            <h2>It Started With a Sourdough Disaster</h2>
+            <p>
+              In the spring of 2020, like thousands of others, we became
+              obsessed with sourdough. Our first loaf was a dense, gummy,
+              sad little brick &mdash; but we were hooked.
+            </p>
+            <p>
+              What followed was two years of reading, experimenting, failing,
+              and finally succeeding. We discovered that baking is
+              fundamentally about understanding: the science of gluten, the
+              biology of fermentation, the chemistry of caramelization.
+            </p>
+            <p>
+              Crumbs &amp; Co. exists to share everything we&rsquo;ve learned,
+              in plain language, for home bakers who want to truly understand
+              their craft &mdash; not just follow instructions blindly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pullquote section -->
+    <section class="section section--alt">
+      <div class="container" style="max-width:760px;">
+        <div class="pullquote">
+          &ldquo;Baking is the only culinary art that demands equal parts
+          precision and patience &mdash; and rewards you with something that
+          fills a house with warmth.&rdquo;
+        </div>
+        <p style="color:var(--muted); text-align:center; font-size:0.9rem;">
+          &mdash; Founder, Crumbs &amp; Co.
+        </p>
+      </div>
+    </section>
+
+    
+
+    <!-- Values Section -->
+    <section class="section section--alt">
+      <div class="container">
+        <!-- Two-column: values list + image -->
+        <div class="two-col">
+          <div>
+            <span class="section-header__label">What We Believe</span>
+            <h2>Our Values</h2>
+            <p style="margin-bottom:2rem; color:var(--muted);">
+              These principles guide every recipe, tip, and tutorial we publish.
+            </p>
+
+            <!-- Values list — content block positioned using CSS grid -->
+            <div class="values-list">
+              <div class="value-item">
+                <span class="value-item__icon">&#129514;</span>
+                <div>
+                  <h4>Explain the Why</h4>
+                  <p style="font-size:0.9rem; color:var(--muted);">
+                    We don&rsquo;t just say &ldquo;bake at 350&deg;F&rdquo; &mdash;
+                    we explain <em>why</em> that temperature matters.
+                  </p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-item__icon">&#128202;</span>
+                <div>
+                  <h4>Tested Rigorously</h4>
+                  <p style="font-size:0.9rem; color:var(--muted);">
+                    Every recipe is tested multiple times before publishing.
+                    We document failures, not just successes.
+                  </p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-item__icon">&#127775;</span>
+                <div>
+                  <h4>Accessible to All</h4>
+                  <p style="font-size:0.9rem; color:var(--muted);">
+                    No special equipment needed. We write for beginners
+                    without boring the experienced baker.
+                  </p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-item__icon">&#127823;</span>
+                <div>
+                  <h4>Seasonal &amp; Honest</h4>
+                  <p style="font-size:0.9rem; color:var(--muted);">
+                    We cook with seasonal produce, real butter, and
+                    no shortcuts we wouldn&rsquo;t use ourselves.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=700&q=80"
+              alt="Pastries and baked goods arranged on a kitchen table"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container" style="text-align:center;">
+        <h2 style="font-style:italic;">Ready to Bake?</h2>
+        <p style="color:var(--muted); max-width:480px; margin:0.6rem auto 2rem;">
+          Dive into our recipes, read the tips, or just reach out &mdash;
+          we love hearing from fellow bakers.
+        </p>
+        <!-- Internal links -->
+        <a href="recipes.html" class="btn">Browse Recipes</a>
+        &nbsp;&nbsp;
+        <a href="contact.html" class="btn btn--outline">Get in Touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-brand__logo">Crumbs &amp; Co.</span>
+        <p>Artisan baking recipes &amp; tutorials for passionate home bakers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="tips.html">Baking Tips</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://www.kingarthurbaking.com" target="_blank" rel="noopener noreferrer">King Arthur Baking</a></li>
+          <li><a href="https://www.seriouseats.com/baking" target="_blank" rel="noopener noreferrer">Serious Eats</a></li>
+          <li><a href="https://www.theperfectloaf.com" target="_blank" rel="noopener noreferrer">The Perfect Loaf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Crumbs &amp; Co. &mdash; All rights reserved.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
