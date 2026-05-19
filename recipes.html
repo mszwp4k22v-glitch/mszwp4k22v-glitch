@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<!-- recipes.html — Recipes listing page for Crumbs & Co. -->
+<!-- recipes.html Recipes listing page for Crumbs & Co. -->
 <html lang="en">
 <head>
-  <!-- Viewport for accessibility and responsive design -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Browse all baking recipes at Crumbs &amp; Co. &mdash; breads, cakes, cookies, and pastries." />
   <title>Recipes &mdash; Crumbs &amp; Co.</title>
 
-  <!-- External CSS only — no embedded or inline CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!--SITE HEADER & NAVIGATION-->
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
       <a href="index.html" class="nav__logo">Crumbs &amp; Co.</a>
       <ul class="nav__links" role="list">
         <li><a href="index.html">Home</a></li>
-        <!-- Active page indicator -->
         <li><a href="recipes.html" class="active" aria-current="page">Recipes</a></li>
         <li><a href="tips.html">Baking Tips</a></li>
         <li><a href="about.html">About</a></li>
@@ -38,7 +34,7 @@
     </div>
   </section>
 
-  <!-- ===== MAIN CONTENT ===== -->
+  <!--  MAIN CONTENT  -->
   <main id="main-content">
 
     <!--BREADS-->
@@ -49,7 +45,6 @@
           <h2>&#127759; Breads &amp; Loaves</h2>
         </div>
 
-        <!-- Card grid — content blocks positioned with CSS -->
         <div class="card-grid">
 
           <!-- Recipe: Sourdough -->
@@ -69,12 +64,10 @@
                 for maximum oven spring.
               </p>
               <div class="card__meta">
-                <!-- Special characters: &frac12; ½ and degree ° -->
                 <span>&#9201; 2&frac12; hrs + overnight</span>
                 <span>&#128293; Hard</span>
               </div>
               <hr class="divider" />
-              <!-- Internal anchor link to recipe detail below -->
               <a href="#sourdough-detail" class="btn" style="margin-top:0.5rem;">See Recipe</a>
             </div>
           </article>
@@ -104,12 +97,11 @@
             </div>
           </article>
 
-        </div><!-- /.card-grid -->
+        </div>
       </div>
     </section>
 
     <!-- ---- SOURDOUGH DETAIL ---- -->
-    <!-- Internal anchor target -->
     <section class="section section--alt" id="sourdough-detail">
       <div class="container">
         <div class="section-header">
@@ -117,14 +109,11 @@
           <h2>Classic Sourdough Boule</h2>
         </div>
 
-        <!-- Recipe two-column layout: ingredients sidebar + steps main -->
         <div class="recipe-layout">
 
-          <!-- Ingredients sidebar (positioned with CSS grid) -->
           <aside class="ingredients-box" aria-label="Ingredients">
             <h3>Ingredients</h3>
             <ul>
-              <!-- Special characters: measurements with character references -->
               <li><span class="measure">450g</span> bread flour</li>
               <li><span class="measure">325g</span> water (80&deg;F)</li>
               <li><span class="measure">90g</span> active starter</li>
@@ -187,7 +176,6 @@
               </li>
             </ol>
 
-            <!-- External link to a trusted sourdough resource -->
             <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--muted);">
               Want to go deeper? Visit
               <a href="https://www.theperfectloaf.com" target="_blank" rel="noopener noreferrer">
@@ -200,7 +188,7 @@
       </div>
     </section>
 
-    <!-- ---- FOCACCIA DETAIL ---- -->
+    <!------ FOCACCIA DETAIL ------>
     <section class="section" id="focaccia-detail">
       <div class="container">
         <div class="section-header">
@@ -216,7 +204,6 @@
               <li><span class="measure">375g</span> warm water</li>
               <li><span class="measure">7g</span> instant yeast (1 packet)</li>
               <li><span class="measure">2 tsp</span> fine salt</li>
-              <!-- Special char: &frac14; for ¼ -->
               <li><span class="measure">&frac14; cup</span> extra-virgin olive oil</li>
               <li>Fresh rosemary sprigs</li>
               <li>Flaky sea salt</li>
